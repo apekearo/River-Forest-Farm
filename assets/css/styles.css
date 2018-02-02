@@ -1,0 +1,14 @@
+.logo {
+  margin-left:auto;
+  display:block;
+  margin-right:auto;
+}
+
+.carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img, .thumbnail > img {
+  margin:auto;
+}
+
+body {
+  background:url('../../assets/img/backgroundTile.jpg');
+}
+
