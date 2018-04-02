@@ -1,0 +1,1296 @@
+.butterfly {
+  position:absolute;
+  height:10em;
+  width:2em;
+  border-radius:1em;
+  -webkit-perspective:100em;
+  perspective:100em;
+}
+
+@media only screen and (max-width: 550px) {
+  .butterfly {
+    display:none;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #mycanvas {
+    display:none;
+  }
+}
+
+.butterfly:nth-of-type(1) {
+  top:19vh;
+  left:18vw;
+  z-index:184;
+  font-size:0.127vmin;
+  background:#FADA32;
+  -webkit-transform:rotate(242deg);
+  transform:rotate(242deg);
+}
+
+.butterfly:nth-of-type(1) .left-wing {
+  -webkit-animation:flap-left 4s 0.6s infinite;
+  animation:flap-left 4s 0.6s infinite;
+  background:#33ffd3;
+}
+
+.butterfly:nth-of-type(1) .left-wing:after {
+  background:#ff3a33;
+}
+
+.butterfly:nth-of-type(1) .right-wing {
+  -webkit-animation:flap-right 4s 0.6s infinite;
+  animation:flap-right 4s 0.6s infinite;
+  background:#ffcc33;
+}
+
+.butterfly:nth-of-type(1) .right-wing:after {
+  background:#FBF8F6;
+}
+
+.butterfly:nth-of-type(2) {
+  top:47vh;
+  left:84vw;
+  z-index:226;
+  font-size:0.148vmin;
+  background:#ffcc33;
+  -webkit-transform:rotate(145deg);
+  transform:rotate(145deg);
+}
+
+.butterfly:nth-of-type(2) .left-wing {
+  -webkit-animation:flap-left 4s 2.26s infinite;
+  animation:flap-left 4s 2.26s infinite;
+  background:#33ebff;
+}
+
+.butterfly:nth-of-type(2) .left-wing:after {
+  background:#FBF8F6;
+}
+
+.butterfly:nth-of-type(2) .right-wing {
+  -webkit-animation:flap-right 4s 2.26s infinite;
+  animation:flap-right 4s 2.26s infinite;
+  background:#814B32;
+}
+
+.butterfly:nth-of-type(2) .right-wing:after {
+  background:#c2ff33;
+}
+
+.butterfly:nth-of-type(3) {
+  top:39vh;
+  left:29vw;
+  z-index:607;
+  font-size:0.3385vmin;
+  background:#ffa333;
+  -webkit-transform:rotate(178deg);
+  transform:rotate(178deg);
+}
+
+.butterfly:nth-of-type(3) .left-wing {
+  -webkit-animation:flap-left 4s 2.7s infinite;
+  animation:flap-left 4s 2.7s infinite;
+  background:#C7A294;
+}
+
+.butterfly:nth-of-type(3) .left-wing:after {
+  background:#FCDA36;
+}
+
+.butterfly:nth-of-type(3) .right-wing {
+  -webkit-animation:flap-right 4s 2.7s infinite;
+  animation:flap-right 4s 2.7s infinite;
+  background:#C7A294;
+}
+
+.butterfly:nth-of-type(3) .right-wing:after {
+  background:#FCDA36;
+}
+
+.butterfly:nth-of-type(4) {
+  top:69vh;
+  left:68vw;
+  z-index:609;
+  font-size:0.3395vmin;
+  background:#88ff33;
+  -webkit-transform:rotate(171deg);
+  transform:rotate(171deg);
+}
+
+.butterfly:nth-of-type(4) .left-wing {
+  -webkit-animation:flap-left 4s 4.87s infinite;
+  animation:flap-left 4s 4.87s infinite;
+  background:#ff3a33;
+}
+
+.butterfly:nth-of-type(4) .left-wing:after {
+  background:#ebff33;
+}
+
+.butterfly:nth-of-type(4) .right-wing {
+  -webkit-animation:flap-right 4s 4.87s infinite;
+  animation:flap-right 4s 4.87s infinite;
+  background:#33ff66;
+}
+
+.butterfly:nth-of-type(4) .right-wing:after {
+  background:#33a7ff;
+}
+
+.butterfly:nth-of-type(5) {
+  top:32vh;
+  left:29vw;
+  z-index:623;
+  font-size:0.3465vmin;
+  background:#ff4733;
+  -webkit-transform:rotate(242deg);
+  transform:rotate(242deg);
+}
+
+.butterfly:nth-of-type(5) .left-wing {
+  -webkit-animation:flap-left 4s 3.72s infinite;
+  animation:flap-left 4s 3.72s infinite;
+  background:#334eff;
+}
+
+.butterfly:nth-of-type(5) .left-wing:after {
+  background:#33ff63;
+}
+
+.butterfly:nth-of-type(5) .right-wing {
+  -webkit-animation:flap-right 4s 3.72s infinite;
+  animation:flap-right 4s 3.72s infinite;
+  background:#ccff33;
+}
+
+.butterfly:nth-of-type(5) .right-wing:after {
+  background:#33ffc5;
+}
+
+.butterfly:nth-of-type(6) {
+  top:30vh;
+  left:12vw;
+  z-index:720;
+  font-size:0.395vmin;
+  background:#ffaa33;
+  -webkit-transform:rotate(236deg);
+  transform:rotate(236deg);
+}
+
+.butterfly:nth-of-type(6) .left-wing {
+  -webkit-animation:flap-left 4s 3.95s infinite;
+  animation:flap-left 4s 3.95s infinite;
+  background:#ffff33;
+}
+
+.butterfly:nth-of-type(6) .left-wing:after {
+  background:#a0ff33;
+}
+
+.butterfly:nth-of-type(6) .right-wing {
+  -webkit-animation:flap-right 4s 3.95s infinite;
+  animation:flap-right 4s 3.95s infinite;
+  background:#33b1ff;
+}
+
+.butterfly:nth-of-type(6) .right-wing:after {
+  background:#aaff33;
+}
+
+.butterfly:nth-of-type(7) {
+  top:96vh;
+  left:11vw;
+  z-index:915;
+  font-size:0.4925vmin;
+  background:#ff3633;
+  -webkit-transform:rotate(301deg);
+  transform:rotate(301deg);
+}
+
+.butterfly:nth-of-type(7) .left-wing {
+  -webkit-animation:flap-left 4s 1.75s infinite;
+  animation:flap-left 4s 1.75s infinite;
+  background:#c5ff33;
+}
+
+.butterfly:nth-of-type(7) .left-wing:after {
+  background:#33ffbe;
+}
+
+.butterfly:nth-of-type(7) .right-wing {
+  -webkit-animation:flap-right 4s 1.75s infinite;
+  animation:flap-right 4s 1.75s infinite;
+  background:#3381ff;
+}
+
+.butterfly:nth-of-type(7) .right-wing:after {
+  background:#5c33ff;
+}
+
+.butterfly:nth-of-type(8) {
+  top:63vh;
+  left:78vw;
+  z-index:571;
+  font-size:0.3205vmin;
+  background:#ff8533;
+  -webkit-transform:rotate(44deg);
+  transform:rotate(44deg);
+}
+
+.butterfly:nth-of-type(8) .left-wing {
+  -webkit-animation:flap-left 4s 2.37s infinite;
+  animation:flap-left 4s 2.37s infinite;
+  background:#ff4433;
+}
+
+.butterfly:nth-of-type(8) .left-wing:after {
+  background:#ffe033;
+}
+
+.butterfly:nth-of-type(8) .right-wing {
+  -webkit-animation:flap-right 4s 2.37s infinite;
+  animation:flap-right 4s 2.37s infinite;
+  background:#fffc33;
+}
+
+.butterfly:nth-of-type(8) .right-wing:after {
+  background:#33ffa3;
+}
+
+.butterfly:nth-of-type(9) {
+  top:75vh;
+  left:23vw;
+  z-index:435;
+  font-size:0.2525vmin;
+  background:#ffc233;
+  -webkit-transform:rotate(314deg);
+  transform:rotate(314deg);
+}
+
+.butterfly:nth-of-type(9) .left-wing {
+  -webkit-animation:flap-left 4s 1.32s infinite;
+  animation:flap-left 4s 1.32s infinite;
+  background:#33ff99;
+}
+
+.butterfly:nth-of-type(9) .left-wing:after {
+  background:#70ff33;
+}
+
+.butterfly:nth-of-type(9) .right-wing {
+  -webkit-animation:flap-right 4s 1.32s infinite;
+  animation:flap-right 4s 1.32s infinite;
+  background:#66ff33;
+}
+
+.butterfly:nth-of-type(9) .right-wing:after {
+  background:#41ff33;
+}
+
+.butterfly:nth-of-type(10) {
+  top:32vh;
+  left:61vw;
+  z-index:851;
+  font-size:0.4605vmin;
+  background:#3d33ff;
+  -webkit-transform:rotate(310deg);
+  transform:rotate(310deg);
+}
+
+.butterfly:nth-of-type(10) .left-wing {
+  -webkit-animation:flap-left 4s 3.22s infinite;
+  animation:flap-left 4s 3.22s infinite;
+  background:#33ffda;
+}
+
+.butterfly:nth-of-type(10) .left-wing:after {
+  background:#ffcc33;
+}
+
+.butterfly:nth-of-type(10) .right-wing {
+  -webkit-animation:flap-right 4s 3.22s infinite;
+  animation:flap-right 4s 3.22s infinite;
+  background:#ff7a33;
+}
+
+.butterfly:nth-of-type(10) .right-wing:after {
+  background:#33ff8f;
+}
+
+.butterfly:nth-of-type(11) {
+  top:41vh;
+  left:44vw;
+  z-index:973;
+  font-size:0.5215vmin;
+  background:#3633ff;
+  -webkit-transform:rotate(138deg);
+  transform:rotate(138deg);
+}
+
+.butterfly:nth-of-type(11) .left-wing {
+  -webkit-animation:flap-left 4s 0.61s infinite;
+  animation:flap-left 4s 0.61s infinite;
+  background:#b4ff33;
+}
+
+.butterfly:nth-of-type(11) .left-wing:after {
+  background:#aaff33;
+}
+
+.butterfly:nth-of-type(11) .right-wing {
+  -webkit-animation:flap-right 4s 0.61s infinite;
+  animation:flap-right 4s 0.61s infinite;
+  background:#b1ff33;
+}
+
+.butterfly:nth-of-type(11) .right-wing:after {
+  background:#ff4133;
+}
+
+.butterfly:nth-of-type(12) {
+  top:39vh;
+  left:51vw;
+  z-index:884;
+  font-size:0.477vmin;
+  background:#a7ff33;
+  -webkit-transform:rotate(303deg);
+  transform:rotate(303deg);
+}
+
+.butterfly:nth-of-type(12) .left-wing {
+  -webkit-animation:flap-left 4s 1.44s infinite;
+  animation:flap-left 4s 1.44s infinite;
+  background:#36ff33;
+}
+
+.butterfly:nth-of-type(12) .left-wing:after {
+  background:#334bff;
+}
+
+.butterfly:nth-of-type(12) .right-wing {
+  -webkit-animation:flap-right 4s 1.44s infinite;
+  animation:flap-right 4s 1.44s infinite;
+  background:#33ffc5;
+}
+
+.butterfly:nth-of-type(12) .right-wing:after {
+  background:#33ffe4;
+}
+
+.butterfly:nth-of-type(13) {
+  top:53vh;
+  left:16vw;
+  z-index:580;
+  font-size:0.325vmin;
+  background:#d6ff33;
+  -webkit-transform:rotate(4deg);
+  transform:rotate(4deg);
+}
+
+.butterfly:nth-of-type(13) .left-wing {
+  -webkit-animation:flap-left 4s 3.41s infinite;
+  animation:flap-left 4s 3.41s infinite;
+  background:#33ff6d;
+}
+
+.butterfly:nth-of-type(13) .left-wing:after {
+  background:#3399ff;
+}
+
+.butterfly:nth-of-type(13) .right-wing {
+  -webkit-animation:flap-right 4s 3.41s infinite;
+  animation:flap-right 4s 3.41s infinite;
+  background:#3363ff;
+}
+
+.butterfly:nth-of-type(13) .right-wing:after {
+  background:#eeff33;
+}
+
+.butterfly:nth-of-type(14) {
+  top:46vh;
+  left:59vw;
+  z-index:365;
+  font-size:0.2175vmin;
+  background:#33ff99;
+  -webkit-transform:rotate(39deg);
+  transform:rotate(39deg);
+}
+
+.butterfly:nth-of-type(14) .left-wing {
+  -webkit-animation:flap-left 4s 4.49s infinite;
+  animation:flap-left 4s 4.49s infinite;
+  background:#33ffc9;
+}
+
+.butterfly:nth-of-type(14) .left-wing:after {
+  background:#7aff33;
+}
+
+.butterfly:nth-of-type(14) .right-wing {
+  -webkit-animation:flap-right 4s 4.49s infinite;
+  animation:flap-right 4s 4.49s infinite;
+  background:#ffc933;
+}
+
+.butterfly:nth-of-type(14) .right-wing:after {
+  background:#ffc233;
+}
+
+.butterfly:nth-of-type(15) {
+  top:56vh;
+  left:45vw;
+  z-index:412;
+  font-size:0.241vmin;
+  background:#33ccff;
+  -webkit-transform:rotate(172deg);
+  transform:rotate(172deg);
+}
+
+.butterfly:nth-of-type(15) .left-wing {
+  -webkit-animation:flap-left 4s 3.54s infinite;
+  animation:flap-left 4s 3.54s infinite;
+  background:#33ffa3;
+}
+
+.butterfly:nth-of-type(15) .left-wing:after {
+  background:#ff4e33;
+}
+
+.butterfly:nth-of-type(15) .right-wing {
+  -webkit-animation:flap-right 4s 3.54s infinite;
+  animation:flap-right 4s 3.54s infinite;
+  background:#c2ff33;
+}
+
+.butterfly:nth-of-type(15) .right-wing:after {
+  background:#ffaa33;
+}
+
+.butterfly:nth-of-type(16) {
+  top:36vh;
+  left:14vw;
+  z-index:985;
+  font-size:0.5275vmin;
+  background:#33ffe0;
+  -webkit-transform:rotate(336deg);
+  transform:rotate(336deg);
+}
+
+.butterfly:nth-of-type(16) .left-wing {
+  -webkit-animation:flap-left 4s 4.46s infinite;
+  animation:flap-left 4s 4.46s infinite;
+  background:#ffbb33;
+}
+
+.butterfly:nth-of-type(16) .left-wing:after {
+  background:#55ff33;
+}
+
+.butterfly:nth-of-type(16) .right-wing {
+  -webkit-animation:flap-right 4s 4.46s infinite;
+  animation:flap-right 4s 4.46s infinite;
+  background:#33ff7a;
+}
+
+.butterfly:nth-of-type(16) .right-wing:after {
+  background:#33ebff;
+}
+
+.butterfly:nth-of-type(17) {
+  top:18vh;
+  left:65vw;
+  z-index:41;
+  font-size:0.0555vmin;
+  background:#69ff33;
+  -webkit-transform:rotate(113deg);
+  transform:rotate(113deg);
+}
+
+.butterfly:nth-of-type(17) .left-wing {
+  -webkit-animation:flap-left 4s 3.22s infinite;
+  animation:flap-left 4s 3.22s infinite;
+  background:#33ff52;
+}
+
+.butterfly:nth-of-type(17) .left-wing:after {
+  background:#33a0ff;
+}
+
+.butterfly:nth-of-type(17) .right-wing {
+  -webkit-animation:flap-right 4s 3.22s infinite;
+  animation:flap-right 4s 3.22s infinite;
+  background:#3374ff;
+}
+
+.butterfly:nth-of-type(17) .right-wing:after {
+  background:#33ddff;
+}
+
+.butterfly:nth-of-type(18) {
+  top:47vh;
+  left:87vw;
+  z-index:554;
+  font-size:0.312vmin;
+  background:#33ffbe;
+  -webkit-transform:rotate(150deg);
+  transform:rotate(150deg);
+}
+
+.butterfly:nth-of-type(18) .left-wing {
+  -webkit-animation:flap-left 4s 3.82s infinite;
+  animation:flap-left 4s 3.82s infinite;
+  background:#33ff66;
+}
+
+.butterfly:nth-of-type(18) .left-wing:after {
+  background:#33ffff;
+}
+
+.butterfly:nth-of-type(18) .right-wing {
+  -webkit-animation:flap-right 4s 3.82s infinite;
+  animation:flap-right 4s 3.82s infinite;
+  background:#fff133;
+}
+
+.butterfly:nth-of-type(18) .right-wing:after {
+  background:#337eff;
+}
+
+.butterfly:nth-of-type(19) {
+  top:42vh;
+  left:6vw;
+  z-index:870;
+  font-size:0.47vmin;
+  background:#b4ff33;
+  -webkit-transform:rotate(223deg);
+  transform:rotate(223deg);
+}
+
+.butterfly:nth-of-type(19) .left-wing {
+  -webkit-animation:flap-left 4s 3.05s infinite;
+  animation:flap-left 4s 3.05s infinite;
+  background:#33ff36;
+}
+
+.butterfly:nth-of-type(19) .left-wing:after {
+  background:#338fff;
+}
+
+.butterfly:nth-of-type(19) .right-wing {
+  -webkit-animation:flap-right 4s 3.05s infinite;
+  animation:flap-right 4s 3.05s infinite;
+  background:#eeff33;
+}
+
+.butterfly:nth-of-type(19) .right-wing:after {
+  background:#ff3633;
+}
+
+.butterfly:nth-of-type(20) {
+  top:12vh;
+  left:34vw;
+  z-index:394;
+  font-size:0.232vmin;
+  background:#33ffe4;
+  -webkit-transform:rotate(311deg);
+  transform:rotate(311deg);
+}
+
+.butterfly:nth-of-type(20) .left-wing {
+  -webkit-animation:flap-left 4s 1.27s infinite;
+  animation:flap-left 4s 1.27s infinite;
+  background:#bbff33;
+}
+
+.butterfly:nth-of-type(20) .left-wing:after {
+  background:#fff133;
+}
+
+.butterfly:nth-of-type(20) .right-wing {
+  -webkit-animation:flap-right 4s 1.27s infinite;
+  animation:flap-right 4s 1.27s infinite;
+  background:#cfff33;
+}
+
+.butterfly:nth-of-type(20) .right-wing:after {
+  background:#fcff33;
+}
+
+.butterfly:nth-of-type(21) {
+  top:39vh;
+  left:85vw;
+  z-index:936;
+  font-size:0.503vmin;
+  background:#ccff33;
+  -webkit-transform:rotate(326deg);
+  transform:rotate(326deg);
+}
+
+.butterfly:nth-of-type(21) .left-wing {
+  -webkit-animation:flap-left 4s 0.4s infinite;
+  animation:flap-left 4s 0.4s infinite;
+  background:#33ff69;
+}
+
+.butterfly:nth-of-type(21) .left-wing:after {
+  background:#7eff33;
+}
+
+.butterfly:nth-of-type(21) .right-wing {
+  -webkit-animation:flap-right 4s 0.4s infinite;
+  animation:flap-right 4s 0.4s infinite;
+  background:#ff4b33;
+}
+
+.butterfly:nth-of-type(21) .right-wing:after {
+  background:#3363ff;
+}
+
+.butterfly:nth-of-type(22) {
+  top:91vh;
+  left:16vw;
+  z-index:103;
+  font-size:0.0865vmin;
+  background:#33a3ff;
+  -webkit-transform:rotate(221deg);
+  transform:rotate(221deg);
+}
+
+.butterfly:nth-of-type(22) .left-wing {
+  -webkit-animation:flap-left 4s 4.24s infinite;
+  animation:flap-left 4s 4.24s infinite;
+  background:#33ffb8;
+}
+
+.butterfly:nth-of-type(22) .left-wing:after {
+  background:#e0ff33;
+}
+
+.butterfly:nth-of-type(22) .right-wing {
+  -webkit-animation:flap-right 4s 4.24s infinite;
+  animation:flap-right 4s 4.24s infinite;
+  background:#33ff7e;
+}
+
+.butterfly:nth-of-type(22) .right-wing:after {
+  background:#ff3d33;
+}
+
+.butterfly:nth-of-type(23) {
+  top:79vh;
+  left:52vw;
+  z-index:371;
+  font-size:0.2205vmin;
+  background:#33ccff;
+  -webkit-transform:rotate(271deg);
+  transform:rotate(271deg);
+}
+
+.butterfly:nth-of-type(23) .left-wing {
+  -webkit-animation:flap-left 4s 1.84s infinite;
+  animation:flap-left 4s 1.84s infinite;
+  background:#3a33ff;
+}
+
+.butterfly:nth-of-type(23) .left-wing:after {
+  background:#33f1ff;
+}
+
+.butterfly:nth-of-type(23) .right-wing {
+  -webkit-animation:flap-right 4s 1.84s infinite;
+  animation:flap-right 4s 1.84s infinite;
+  background:#3347ff;
+}
+
+.butterfly:nth-of-type(23) .right-wing:after {
+  background:#47ff33;
+}
+
+.butterfly:nth-of-type(24) {
+  top:58vh;
+  left:51vw;
+  z-index:408;
+  font-size:0.239vmin;
+  background:#4eff33;
+  -webkit-transform:rotate(270deg);
+  transform:rotate(270deg);
+}
+
+.butterfly:nth-of-type(24) .left-wing {
+  -webkit-animation:flap-left 4s 0.92s infinite;
+  animation:flap-left 4s 0.92s infinite;
+  background:#3352ff;
+}
+
+.butterfly:nth-of-type(24) .left-wing:after {
+  background:#69ff33;
+}
+
+.butterfly:nth-of-type(24) .right-wing {
+  -webkit-animation:flap-right 4s 0.92s infinite;
+  animation:flap-right 4s 0.92s infinite;
+  background:#77ff33;
+}
+
+.butterfly:nth-of-type(24) .right-wing:after {
+  background:#33bbff;
+}
+
+.butterfly:nth-of-type(25) {
+  top:32vh;
+  left:38vw;
+  z-index:749;
+  font-size:0.4095vmin;
+  background:#33ffda;
+  -webkit-transform:rotate(354deg);
+  transform:rotate(354deg);
+}
+
+.butterfly:nth-of-type(25) .left-wing {
+  -webkit-animation:flap-left 4s 0.63s infinite;
+  animation:flap-left 4s 0.63s infinite;
+  background:#33ffc5;
+}
+
+.butterfly:nth-of-type(25) .left-wing:after {
+  background:#ffd333;
+}
+
+.butterfly:nth-of-type(25) .right-wing {
+  -webkit-animation:flap-right 4s 0.63s infinite;
+  animation:flap-right 4s 0.63s infinite;
+  background:#334eff;
+}
+
+.butterfly:nth-of-type(25) .right-wing:after {
+  background:#33c5ff;
+}
+
+.butterfly:nth-of-type(26) {
+  top:13vh;
+  left:24vw;
+  z-index:418;
+  font-size:0.244vmin;
+  background:#9cff33;
+  -webkit-transform:rotate(192deg);
+  transform:rotate(192deg);
+}
+
+.butterfly:nth-of-type(26) .left-wing {
+  -webkit-animation:flap-left 4s 4.97s infinite;
+  animation:flap-left 4s 4.97s infinite;
+  background:#3352ff;
+}
+
+.butterfly:nth-of-type(26) .left-wing:after {
+  background:#47ff33;
+}
+
+.butterfly:nth-of-type(26) .right-wing {
+  -webkit-animation:flap-right 4s 4.97s infinite;
+  animation:flap-right 4s 4.97s infinite;
+  background:#f5ff33;
+}
+
+.butterfly:nth-of-type(26) .right-wing:after {
+  background:#ff8533;
+}
+
+.butterfly:nth-of-type(27) {
+  top:78vh;
+  left:69vw;
+  z-index:906;
+  font-size:0.488vmin;
+  background:#33ff88;
+  -webkit-transform:rotate(21deg);
+  transform:rotate(21deg);
+}
+
+.butterfly:nth-of-type(27) .left-wing {
+  -webkit-animation:flap-left 4s 3.32s infinite;
+  animation:flap-left 4s 3.32s infinite;
+  background:#ffc933;
+}
+
+.butterfly:nth-of-type(27) .left-wing:after {
+  background:#4b33ff;
+}
+
+.butterfly:nth-of-type(27) .right-wing {
+  -webkit-animation:flap-right 4s 3.32s infinite;
+  animation:flap-right 4s 3.32s infinite;
+  background:#3396ff;
+}
+
+.butterfly:nth-of-type(27) .right-wing:after {
+  background:#33ff96;
+}
+
+.butterfly:nth-of-type(28) {
+  top:31vh;
+  left:64vw;
+  z-index:958;
+  font-size:0.514vmin;
+  background:#33adff;
+  -webkit-transform:rotate(45deg);
+  transform:rotate(45deg);
+}
+
+.butterfly:nth-of-type(28) .left-wing {
+  -webkit-animation:flap-left 4s 1.87s infinite;
+  animation:flap-left 4s 1.87s infinite;
+  background:#ff4733;
+}
+
+.butterfly:nth-of-type(28) .left-wing:after {
+  background:#5fff33;
+}
+
+.butterfly:nth-of-type(28) .right-wing {
+  -webkit-animation:flap-right 4s 1.87s infinite;
+  animation:flap-right 4s 1.87s infinite;
+  background:#3366ff;
+}
+
+.butterfly:nth-of-type(28) .right-wing:after {
+  background:#338fff;
+}
+
+.butterfly:nth-of-type(29) {
+  top:82vh;
+  left:52vw;
+  z-index:33;
+  font-size:0.0515vmin;
+  background:#ff4b33;
+  -webkit-transform:rotate(58deg);
+  transform:rotate(58deg);
+}
+
+.butterfly:nth-of-type(29) .left-wing {
+  -webkit-animation:flap-left 4s 2.82s infinite;
+  animation:flap-left 4s 2.82s infinite;
+  background:#ffbe33;
+}
+
+.butterfly:nth-of-type(29) .left-wing:after {
+  background:#beff33;
+}
+
+.butterfly:nth-of-type(29) .right-wing {
+  -webkit-animation:flap-right 4s 2.82s infinite;
+  animation:flap-right 4s 2.82s infinite;
+  background:#5233ff;
+}
+
+.butterfly:nth-of-type(29) .right-wing:after {
+  background:#33a0ff;
+}
+
+.butterfly:nth-of-type(30) {
+  top:88vh;
+  left:50vw;
+  z-index:760;
+  font-size:0.415vmin;
+  background:#33e7ff;
+  -webkit-transform:rotate(195deg);
+  transform:rotate(195deg);
+}
+
+.butterfly:nth-of-type(30) .left-wing {
+  -webkit-animation:flap-left 4s 4.79s infinite;
+  animation:flap-left 4s 4.79s infinite;
+  background:#ff9633;
+}
+
+.butterfly:nth-of-type(30) .left-wing:after {
+  background:#33ffdd;
+}
+
+.butterfly:nth-of-type(30) .right-wing {
+  -webkit-animation:flap-right 4s 4.79s infinite;
+  animation:flap-right 4s 4.79s infinite;
+  background:#33ff9c;
+}
+
+.butterfly:nth-of-type(30) .right-wing:after {
+  background:#ff3633;
+}
+
+.butterfly:nth-of-type(31) {
+  top:76vh;
+  left:13vw;
+  z-index:847;
+  font-size:0.4585vmin;
+  background:#66ff33;
+  -webkit-transform:rotate(362deg);
+  transform:rotate(362deg);
+}
+
+.butterfly:nth-of-type(31) .left-wing {
+  -webkit-animation:flap-left 4s 2.38s infinite;
+  animation:flap-left 4s 2.38s infinite;
+  background:#33ffad;
+}
+
+.butterfly:nth-of-type(31) .left-wing:after {
+  background:#33bbff;
+}
+
+.butterfly:nth-of-type(31) .right-wing {
+  -webkit-animation:flap-right 4s 2.38s infinite;
+  animation:flap-right 4s 2.38s infinite;
+  background:#6333ff;
+}
+
+.butterfly:nth-of-type(31) .right-wing:after {
+  background:#7eff33;
+}
+
+.butterfly:nth-of-type(32) {
+  top:97vh;
+  left:16vw;
+  z-index:153;
+  font-size:0.1115vmin;
+  background:#52ff33;
+  -webkit-transform:rotate(72deg);
+  transform:rotate(72deg);
+}
+
+.butterfly:nth-of-type(32) .left-wing {
+  -webkit-animation:flap-left 4s 0.85s infinite;
+  animation:flap-left 4s 0.85s infinite;
+  background:#f5ff33;
+}
+
+.butterfly:nth-of-type(32) .left-wing:after {
+  background:#41ff33;
+}
+
+.butterfly:nth-of-type(32) .right-wing {
+  -webkit-animation:flap-right 4s 0.85s infinite;
+  animation:flap-right 4s 0.85s infinite;
+  background:#ff6333;
+}
+
+.butterfly:nth-of-type(32) .right-wing:after {
+  background:#33ffbb;
+}
+
+.butterfly:nth-of-type(33) {
+  top:35vh;
+  left:67vw;
+  z-index:989;
+  font-size:0.5295vmin;
+  background:#33ff8f;
+  -webkit-transform:rotate(24deg);
+  transform:rotate(24deg);
+}
+
+.butterfly:nth-of-type(33) .left-wing {
+  -webkit-animation:flap-left 4s 3.89s infinite;
+  animation:flap-left 4s 3.89s infinite;
+  background:#ffc533;
+}
+
+.butterfly:nth-of-type(33) .left-wing:after {
+  background:#33eeff;
+}
+
+.butterfly:nth-of-type(33) .right-wing {
+  -webkit-animation:flap-right 4s 3.89s infinite;
+  animation:flap-right 4s 3.89s infinite;
+  background:#fffc33;
+}
+
+.butterfly:nth-of-type(33) .right-wing:after {
+  background:#88ff33;
+}
+
+.butterfly:nth-of-type(34) {
+  top:41vh;
+  left:93vw;
+  z-index:330;
+  font-size:0.2vmin;
+  background:#33ff5c;
+  -webkit-transform:rotate(101deg);
+  transform:rotate(101deg);
+}
+
+.butterfly:nth-of-type(34) .left-wing {
+  -webkit-animation:flap-left 4s 0.62s infinite;
+  animation:flap-left 4s 0.62s infinite;
+  background:#33ff41;
+}
+
+.butterfly:nth-of-type(34) .left-wing:after {
+  background:#74ff33;
+}
+
+.butterfly:nth-of-type(34) .right-wing {
+  -webkit-animation:flap-right 4s 0.62s infinite;
+  animation:flap-right 4s 0.62s infinite;
+  background:#33ff74;
+}
+
+.butterfly:nth-of-type(34) .right-wing:after {
+  background:#33fff8;
+}
+
+.butterfly:nth-of-type(35) {
+  top:93vh;
+  left:41vw;
+  z-index:781;
+  font-size:0.4255vmin;
+  background:#33ffda;
+  -webkit-transform:rotate(345deg);
+  transform:rotate(345deg);
+}
+
+.butterfly:nth-of-type(35) .left-wing {
+  -webkit-animation:flap-left 4s 4.94s infinite;
+  animation:flap-left 4s 4.94s infinite;
+  background:#e7ff33;
+}
+
+.butterfly:nth-of-type(35) .left-wing:after {
+  background:#a7ff33;
+}
+
+.butterfly:nth-of-type(35) .right-wing {
+  -webkit-animation:flap-right 4s 4.94s infinite;
+  animation:flap-right 4s 4.94s infinite;
+  background:#ffe033;
+}
+
+.butterfly:nth-of-type(35) .right-wing:after {
+  background:#3355ff;
+}
+
+.butterfly:nth-of-type(36) {
+  top:42vh;
+  left:34vw;
+  z-index:228;
+  font-size:0.149vmin;
+  background:#33c2ff;
+  -webkit-transform:rotate(340deg);
+  transform:rotate(340deg);
+}
+
+.butterfly:nth-of-type(36) .left-wing {
+  -webkit-animation:flap-left 4s 1.14s infinite;
+  animation:flap-left 4s 1.14s infinite;
+  background:#fff533;
+}
+
+.butterfly:nth-of-type(36) .left-wing:after {
+  background:#8fff33;
+}
+
+.butterfly:nth-of-type(36) .right-wing {
+  -webkit-animation:flap-right 4s 1.14s infinite;
+  animation:flap-right 4s 1.14s infinite;
+  background:#69ff33;
+}
+
+.butterfly:nth-of-type(36) .right-wing:after {
+  background:#3a33ff;
+}
+
+.butterfly:nth-of-type(37) {
+  top:16vh;
+  left:84vw;
+  z-index:44;
+  font-size:0.057vmin;
+  background:#ffbe33;
+  -webkit-transform:rotate(256deg);
+  transform:rotate(256deg);
+}
+
+.butterfly:nth-of-type(37) .left-wing {
+  -webkit-animation:flap-left 4s 2.89s infinite;
+  animation:flap-left 4s 2.89s infinite;
+  background:#ff7033;
+}
+
+.butterfly:nth-of-type(37) .left-wing:after {
+  background:#33bbff;
+}
+
+.butterfly:nth-of-type(37) .right-wing {
+  -webkit-animation:flap-right 4s 2.89s infinite;
+  animation:flap-right 4s 2.89s infinite;
+  background:#33ffbb;
+}
+
+.butterfly:nth-of-type(37) .right-wing:after {
+  background:#70ff33;
+}
+
+.butterfly:nth-of-type(38) {
+  top:73vh;
+  left:6vw;
+  z-index:660;
+  font-size:0.365vmin;
+  background:#33ff99;
+  -webkit-transform:rotate(77deg);
+  transform:rotate(77deg);
+}
+
+.butterfly:nth-of-type(38) .left-wing {
+  -webkit-animation:flap-left 4s 1.35s infinite;
+  animation:flap-left 4s 1.35s infinite;
+  background:#e4ff33;
+}
+
+.butterfly:nth-of-type(38) .left-wing:after {
+  background:#33ff41;
+}
+
+.butterfly:nth-of-type(38) .right-wing {
+  -webkit-animation:flap-right 4s 1.35s infinite;
+  animation:flap-right 4s 1.35s infinite;
+  background:#ff6933;
+}
+
+.butterfly:nth-of-type(38) .right-wing:after {
+  background:#3374ff;
+}
+
+.butterfly:nth-of-type(39) {
+  top:40vh;
+  left:25vw;
+  z-index:653;
+  font-size:0.3615vmin;
+  background:#33a0ff;
+  -webkit-transform:rotate(229deg);
+  transform:rotate(229deg);
+}
+
+.butterfly:nth-of-type(39) .left-wing {
+  -webkit-animation:flap-left 4s 3.32s infinite;
+  animation:flap-left 4s 3.32s infinite;
+  background:#99ff33;
+}
+
+.butterfly:nth-of-type(39) .left-wing:after {
+  background:#daff33;
+}
+
+.butterfly:nth-of-type(39) .right-wing {
+  -webkit-animation:flap-right 4s 3.32s infinite;
+  animation:flap-right 4s 3.32s infinite;
+  background:#33ffcf;
+}
+
+.butterfly:nth-of-type(39) .right-wing:after {
+  background:#ffbb33;
+}
+
+.butterfly:nth-of-type(40) {
+  top:58vh;
+  left:45vw;
+  z-index:968;
+  font-size:0.519vmin;
+  background:#33e0ff;
+  -webkit-transform:rotate(279deg);
+  transform:rotate(279deg);
+}
+
+.butterfly:nth-of-type(40) .left-wing {
+  -webkit-animation:flap-left 4s 2.23s infinite;
+  animation:flap-left 4s 2.23s infinite;
+  background:#ff5533;
+}
+
+.butterfly:nth-of-type(40) .left-wing:after {
+  background:#33fff8;
+}
+
+.butterfly:nth-of-type(40) .right-wing {
+  -webkit-animation:flap-right 4s 2.23s infinite;
+  animation:flap-right 4s 2.23s infinite;
+  background:#eeff33;
+}
+
+.butterfly:nth-of-type(40) .right-wing:after {
+  background:#fff533;
+}
+
+.wing {
+  position:absolute;
+  bottom:50%;
+  height:240%;
+  width:1400%;
+}
+
+.wing:after {
+  position:absolute;
+  top:100%;
+  height:100%;
+  width:100%;
+  content:'';
+  background:#fff;
+}
+
+.left-wing {
+  right:100%;
+  -webkit-animation:flap-left 4s infinite;
+  animation:flap-left 4s infinite;
+  border-radius:1em 100% 0 4em;
+  -webkit-transform-origin:right bottom;
+  transform-origin:right bottom;
+}
+
+.left-wing:after {
+  border-radius:1em 0 1em 100%;
+  -webkit-transform-origin:right top;
+  transform-origin:right top;
+  -webkit-transform:skewY(-15deg) scaleX(0.65) scaleY(0.85);
+  transform:skewY(-15deg) scaleX(0.65) scaleY(0.85);
+}
+
+.right-wing {
+  left:100%;
+  -webkit-animation:flap-right 4s infinite;
+  animation:flap-right 4s infinite;
+  border-radius:100% 1em 4em 0;
+  -webkit-transform-origin:left bottom;
+  transform-origin:left bottom;
+}
+
+.right-wing:after {
+  border-radius:0 1em 100% 1em;
+  -webkit-transform-origin:left top;
+  transform-origin:left top;
+  -webkit-transform:skewY(15deg) scaleX(0.65) scaleY(0.85);
+  transform:skewY(15deg) scaleX(0.65) scaleY(0.85);
+}
+
+@keyframes flap-left {
+  50% {
+    -webkit-transform:rotateY(85deg);
+    transform:rotateY(85deg);
+  }
+}
+
+@keyframes flap-right {
+  50% {
+    -webkit-transform:rotateY(-85deg);
+    transform:rotateY(-85deg);
+  }
+}
+
+h1 {
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin:0;
+  font-size:7vmin;
+  font-weight:normal;
+  -webkit-transform:translate(-50%, -50%);
+  transform:translate(-50%, -50%);
+}
+
