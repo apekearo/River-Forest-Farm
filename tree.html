@@ -7,11 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <canvas id="mycanvas" style="width:239px; height:245px"></canvas>
+    <canvas class="mycanvas" style="width:239px; height:245px"></canvas>
     <p style="height:60px">give me space!</p>
     <br>
 <style>
-#mycanvas{
+.mycanvas{
     margin: 0; padding: 0; 
     /*background:linear-gradient(360deg, #e56420, #37bbde);*/
     overflow:hidden;
@@ -42,7 +42,7 @@
 
 var depth = 16 , branchWidth = 12, step = 0
 var newDepthPub, depthPub
-var canvas = document.getElementById('mycanvas')
+var canvas = document.getElementsByClassName('mycanvas')
 var ctx = canvas.getContext('2d')
 canvas.width = window.innerWidth
 canvas.height = window.innerHeight

@@ -136,7 +136,7 @@
 }
 
 .butterfly:nth-of-type(4) .right-wing:after {
-  background:#33a7ff;
+  background:#FADA32;
 }
 
 .butterfly:nth-of-type(5) {
@@ -144,7 +144,7 @@
   left:29vw;
   z-index:623;
   font-size:0.3465vmin;
-  background:#ff4733;
+  background:#FADA32;
   -webkit-transform:rotate(242deg);
   transform:rotate(242deg);
 }
@@ -152,7 +152,7 @@
 .butterfly:nth-of-type(5) .left-wing {
   -webkit-animation:flap-left 4s 3.72s infinite;
   animation:flap-left 4s 3.72s infinite;
-  background:#334eff;
+  background:#FADA32;
 }
 
 .butterfly:nth-of-type(5) .left-wing:after {
@@ -200,11 +200,11 @@
 }
 
 .butterfly:nth-of-type(7) {
-  top:96vh;
-  left:11vw;
+  top:78vh;
+  left:8vw;
   z-index:915;
   font-size:0.4925vmin;
-  background:#ff3633;
+  background:#FADA32;
   -webkit-transform:rotate(301deg);
   transform:rotate(301deg);
 }
@@ -231,7 +231,7 @@
 
 .butterfly:nth-of-type(8) {
   top:63vh;
-  left:78vw;
+  left:98vw;
   z-index:571;
   font-size:0.3205vmin;
   background:#ff8533;
