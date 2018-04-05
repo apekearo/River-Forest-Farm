@@ -36,7 +36,7 @@
 }
 
 .butterfly:nth-of-type(1) .left-wing:after {
-  background:#ff3a33;
+  background:#814B32;
 }
 
 .butterfly:nth-of-type(1) .right-wing {
@@ -62,7 +62,7 @@
 .butterfly:nth-of-type(2) .left-wing {
   -webkit-animation:flap-left 4s 2.26s infinite;
   animation:flap-left 4s 2.26s infinite;
-  background:#33ebff;
+  background:#3A9560;
 }
 
 .butterfly:nth-of-type(2) .left-wing:after {
@@ -114,7 +114,7 @@
   left:68vw;
   z-index:609;
   font-size:0.3395vmin;
-  background:#88ff33;
+  background:#3A9560;
   -webkit-transform:rotate(171deg);
   transform:rotate(171deg);
 }
@@ -122,7 +122,7 @@
 .butterfly:nth-of-type(4) .left-wing {
   -webkit-animation:flap-left 4s 4.87s infinite;
   animation:flap-left 4s 4.87s infinite;
-  background:#ff3a33;
+  background:#814B32;
 }
 
 .butterfly:nth-of-type(4) .left-wing:after {
@@ -132,7 +132,7 @@
 .butterfly:nth-of-type(4) .right-wing {
   -webkit-animation:flap-right 4s 4.87s infinite;
   animation:flap-right 4s 4.87s infinite;
-  background:#33ff66;
+  background:#3A9560;
 }
 
 .butterfly:nth-of-type(4) .right-wing:after {
@@ -156,7 +156,7 @@
 }
 
 .butterfly:nth-of-type(5) .left-wing:after {
-  background:#33ff63;
+  background:#3A9560;
 }
 
 .butterfly:nth-of-type(5) .right-wing {
@@ -186,7 +186,7 @@
 }
 
 .butterfly:nth-of-type(6) .left-wing:after {
-  background:#a0ff33;
+  background:#3A9560;
 }
 
 .butterfly:nth-of-type(6) .right-wing {
@@ -196,7 +196,7 @@
 }
 
 .butterfly:nth-of-type(6) .right-wing:after {
-  background:#aaff33;
+  background:#3A9560;
 }
 
 .butterfly:nth-of-type(7) {
@@ -204,7 +204,7 @@
   left:8vw;
   z-index:915;
   font-size:0.4925vmin;
-  background:#FADA32;
+  background:#F0C4C4;
   -webkit-transform:rotate(301deg);
   transform:rotate(301deg);
 }
@@ -226,12 +226,12 @@
 }
 
 .butterfly:nth-of-type(7) .right-wing:after {
-  background:#5c33ff;
+  background:#F0C4C4;
 }
 
 .butterfly:nth-of-type(8) {
   top:63vh;
-  left:98vw;
+  left:82vw;
   z-index:571;
   font-size:0.3205vmin;
   background:#ff8533;
@@ -242,7 +242,7 @@
 .butterfly:nth-of-type(8) .left-wing {
   -webkit-animation:flap-left 4s 2.37s infinite;
   animation:flap-left 4s 2.37s infinite;
-  background:#ff4433;
+  background:#814B32;
 }
 
 .butterfly:nth-of-type(8) .left-wing:after {
@@ -252,7 +252,7 @@
 .butterfly:nth-of-type(8) .right-wing {
   -webkit-animation:flap-right 4s 2.37s infinite;
   animation:flap-right 4s 2.37s infinite;
-  background:#fffc33;
+  background:#F0C4C4;
 }
 
 .butterfly:nth-of-type(8) .right-wing:after {
