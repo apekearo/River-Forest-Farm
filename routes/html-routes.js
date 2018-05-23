@@ -34,6 +34,6 @@ module.exports = function(app) {
   
 // route to my html from my index bootstrap
   app.get("/index", function(req, res) {
-    res.sendFile(path.join(__dirname, "../index.html"));
+    res.sendFile(path.join(__dirname, "../public/index.html"));
   });
 };
