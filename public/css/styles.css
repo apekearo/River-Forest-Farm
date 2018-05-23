@@ -29,7 +29,8 @@ button.submit {
   }
   
   .blog {
-    margin-top: 30px;
+    margin-top: 20%;
+    margin-left: 25%;
   }
   
   .hidden {
@@ -45,4 +46,18 @@ button.submit {
   .top-30 {
     margin-top: 30px;
   }
+  .container-fluid{
+    height:100%;
+    display:table;
+    width: 100%;
+    padding: 0;
+  }
+   
+  .row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
+   
+   
   
+  .centering {
+    float:none;
+    margin:0 auto;
+  }
