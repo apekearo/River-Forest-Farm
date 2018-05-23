@@ -30,7 +30,6 @@ button.submit {
   
   .blog {
     margin-top: 20%;
-    margin-left: 25%;
   }
   
   .hidden {
@@ -46,7 +45,7 @@ button.submit {
   .top-30 {
     margin-top: 30px;
   }
-  .container-fluid{
+  /* .container-fluid{
     height:100%;
     display:table;
     width: 100%;
@@ -60,4 +59,4 @@ button.submit {
   .centering {
     float:none;
     margin:0 auto;
-  }
+  } */
