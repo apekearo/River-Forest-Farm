@@ -4,6 +4,8 @@ button.submit {
   
   form#cms {
     margin-top: 50px;
+    background-color: antiquewhite;
+    border-style: inset;
   }
   
   #cms textarea {
@@ -18,14 +20,17 @@ button.submit {
   
   .author-container {
     margin-top: 50px;
+    background-color: antiquewhite;
   }
   
   .author-list {
     margin-top: 25px;
+    
   }
   
   .blog-container {
     margin-top: 30px;
+    background-color: antiquewhite;
   }
   
   .blog {
