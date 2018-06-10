@@ -8,8 +8,11 @@
 }
 
 @media only screen and (max-width: 550px) {
-  .butterfly {
+  /* .butterfly {
     display:none;
+  } */
+  .butterfly:nth-of-type(2){
+    display: none;
   }
 }
 

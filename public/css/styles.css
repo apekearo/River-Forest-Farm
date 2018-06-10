@@ -4,7 +4,7 @@ button.submit {
   
   form#cms {
     margin-top: 50px;
-    background-color: antiquewhite;
+    background-color: #eef4f7;
     border-style: inset;
   }
   
@@ -20,7 +20,7 @@ button.submit {
   
   .author-container {
     margin-top: 50px;
-    background-color: antiquewhite;
+    background-color: #eef4f7;
   }
   
   .author-list {
@@ -30,7 +30,7 @@ button.submit {
   
   .blog-container {
     margin-top: 30px;
-    background-color: antiquewhite;
+    background-color: #eef4f7;
   }
   
   .blog {
