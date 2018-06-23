@@ -6,6 +6,7 @@ button.submit {
     margin-top: 50px;
     background-color: #eef4f7;
     border-style: inset;
+    border: 2px solid royalblue;
   }
   
   #cms textarea {
@@ -21,6 +22,8 @@ button.submit {
   .author-container {
     margin-top: 50px;
     background-color: #eef4f7;
+    border-radius: 25px;
+    border: 2px solid royalblue;
   }
   
   .author-list {
@@ -30,11 +33,14 @@ button.submit {
   
   .blog-container {
     margin-top: 30px;
+    padding-bottom: 30px;
     background-color: #eef4f7;
+    border-radius: 25px;
+    border: 2px solid royalblue;
   }
   
   .blog {
-    margin-top: 20%;
+    margin-top: 8%;
   }
   
   .hidden {
@@ -48,8 +54,34 @@ button.submit {
   }
   
   .top-30 {
-    margin-top: 30px;
+    margin-top: 17px;
   }
+  .hrData { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 3px;
+}
+.redBeam {
+  background-color: tomato;
+  opacity: .9;
+  border-radius: 25px;
+}
+.greenBeam {
+  background-color: peru;
+  opacity: .9;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+}
+.blueBeam {
+  background-color: burlywood;
+  opacity: .9;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+}
   /* .container-fluid{
     height:100%;
     display:table;
