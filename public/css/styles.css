@@ -7,6 +7,8 @@ button.submit {
     background-color: #eef4f7;
     border-style: inset;
     border: 2px solid royalblue;
+    border-radius: 25px;
+    padding: 4%;
   }
   
   #cms textarea {
