@@ -68,7 +68,7 @@
 <script type='text/javascript' src='js/bloggerapi.js'></script>
 <script>
         function renderResults(response) {
-          if (responses.items) {
+          if (response.items) {
             for (var i = 0; i < response.items.length; i++) {
               //do whatever you want with the posts of your blog
               $('.content').before('<div id="post' + [i+1] + '" class="post"><h1></h1><p></p></div>');
