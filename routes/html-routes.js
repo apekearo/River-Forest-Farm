@@ -39,4 +39,9 @@ module.exports = function(app) {
   app.get("/index", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/index.html"));
   });
+
+// a place to forward in from blogger
+app.get("/headlines", function(req, res) {
+  res.sendFile(path.join(__dirname, "../public/headlines.html"));
+});
 };
