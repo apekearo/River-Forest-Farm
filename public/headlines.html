@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Headlines</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 </head>
 <body>
    <h2>Blogg it up!</h2>
         <!-- <iframe src="http://riverforestfarm.blogspot.com" onload="this.style.height=(this.contentDocument.body.scrollHeight+15) +'px';" style="width:100%;"></iframe> -->
-        <div id="content"></div>
+        <div class="content"></div>
 
     <!-- <iframe src ="riverforestfarm.blogspot.com" width="100%" height="80%">
     <p>Your browser does not support iFrames.</p>
@@ -32,7 +32,7 @@
           if (response.items) {
             for (var i = 0; i < response.items.length; i++) {
               //do whatever you want with the posts of your blog
-              $('#content').append('<div id="post' + [i+1] + '" class="post"><h1></h1><p></p></div>');
+              $('.content').before('<div id="post' + [i+1] + '" class="post"><h1></h1><p></p></div>');
         $('.post h1').html(response.items[i].title);
         $('.post p').html(response.items[i].content);
             }      
