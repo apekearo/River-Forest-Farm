@@ -109,6 +109,19 @@ button.submit {
     color: white;
     text-align: center;
 }
+.post {
+  margin: 30px;
+    background: #78B293;
+    border: 1px solid black;
+    outline: 5px solid#1B703F;
+    outline-offset: 15px;
+}
+.headlineTitle {
+  margin: 30px;
+  background: rgb(218, 89, 89);
+  border: 1px solid black;
+  outline-offset: 15px
+}
   /* .container-fluid{
     height:100%;
     display:table;
