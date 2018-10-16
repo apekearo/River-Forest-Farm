@@ -65,6 +65,8 @@
             <div class="intro">
                 <h2 class="text-center">Here's A Gmap To Get You Here!</h2>
                 <h3 class="text-center">2000 caldwell lane Garfield, 78617</h3>
+                <h3 class="text-center" style="text-decoration: underline">Contact Us: Devah@RiverForestFarm.com</h3>
+
                 <p class="text-center">Please come by and bring the family as you will enjoy our meadows, river, and growing farm! </p>
             </div>
         </div>
@@ -77,8 +79,8 @@
           if (response.items) {
             for (var i = 0; i < response.items.length; i++) {
               $('.content').before('<div id="post' + [i+1] + '" class="post"><h1></h1><p></p></div>');
-        $('.post h1').html(response.items[i++].title);
-        $('.post p').html(response.items[i++].content);
+        $('#post' + [i+1] + ' h1').html(response.items[i].title);
+        $('#post' + [i+1]  + ' p').html(response.items[i].content);
             }      
           }
           if(response.nextPageToken) {

@@ -109,8 +109,9 @@ button.submit {
     color: white;
     text-align: center;
 }
+
 .post {
-  margin: 30px;
+    margin: 30px;
     background: #78B293;
     border: 1px solid black;
     outline: 5px solid#1B703F;
@@ -119,7 +120,8 @@ button.submit {
 .headlineTitle {
   margin: 30px;
   background: rgb(218, 89, 89);
-  border: 1px solid black;
+  border-style: inset;
+  border-bottom: 2px solid black;
   outline-offset: 15px
 }
   /* .container-fluid{
