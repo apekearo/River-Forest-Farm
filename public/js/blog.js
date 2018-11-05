@@ -80,7 +80,8 @@ $(document).ready(function() {
       var newPostTitle = $("<h2>");
       var newPostDate = $("<small>");
       var newPostAuthor = $("<h5>");
-      newPostAuthor.text("Written by: " + post.Author.name);
+      // changed newPostAuthor.text to .append so i could concat the br tag and add the zipcode line
+      newPostAuthor.append("Written by: " + post.Author.name + "<br>" + "Post's ZipCode: " + post.Author.zip);
       newPostAuthor.css({
         float: "right",
         color: "blue",
