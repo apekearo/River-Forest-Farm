@@ -1,7 +1,7 @@
 $(document).ready(function() {
     // Getting references to the name input and author container, as well as the table body
     var nameInput = $("#author-name");
-    var zipCode = $("#zip-Code");
+    var zipCode = $("#zip-code");
     var authorList = $("tbody");
     var authorContainer = $(".author-container");
     // Adding event listeners to the form to create a new object, and the button to delete
@@ -17,7 +17,7 @@ $(document).ready(function() {
       event.preventDefault();
       console.log("STOP IT");
       // Don't do anything if the name fields hasn't been filled out
-      debugger;
+      /* debugger; */
       if (!nameInput.val().trim().trim()) {
         return;
       }
