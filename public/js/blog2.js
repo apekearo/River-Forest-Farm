@@ -3,8 +3,9 @@ $(document).ready(function() {
 
   // blogContainer holds all of our posts
   var blogContainer = $(".listings-container");
-  var postCategorySelect = $("#category2");
+  var postCategorySelect = $("#cropAuthor");
   // Click events for the edit and delete buttons
+  $(document).on("click", "button.submit", handlePostPost);
   $(document).on("click", "button.delete", handlePostDelete);
   $(document).on("click", "button.edit", handlePostEdit);
   // Variable to hold our posts
@@ -30,8 +31,8 @@ $(document).ready(function() {
     if (authorId) {
       authorId = "/?author_id=" + authorId;
     }
-    $.get("/api/posts" + authorId, function(data) {
-      console.log("Posts", data);
+    $.get("/api/crops" + authorId, function(data) {
+      console.log("Crops", data);
       posts = data;
       if (!posts || !posts.length) {
         displayEmpty(author);
@@ -46,13 +47,26 @@ $(document).ready(function() {
   function deletePost(id) {
     $.ajax({
       method: "DELETE",
-      url: "/api/posts/" + id
+      url: "/api/crops/" + id
     })
       .then(function() {
         getPosts(postCategorySelect.val());
       });
   }
-
+  function createPost(id, c) {
+    $.ajax({
+      method: "POST",
+      url: "/api/crops/",
+      data: {
+      cropName: cropNa,
+      cropTotal: cropTo
+      }
+      
+    })
+      .then(function() {
+        getPosts(postCategorySelect.val());
+      });
+  }
   // InitializeRows handles appending all of our constructed post HTML inside blogContainer
   function initializeRows() {
     blogContainer.empty();
@@ -80,7 +94,8 @@ $(document).ready(function() {
     var newPostTitle = $("<h2>");
     var newPostDate = $("<small>");
     var newPostAuthor = $("<h5>");
-    newPostAuthor.text("Written by: " + post.Author.name);
+    //changing posts to crops
+    newPostAuthor.text("Written by: " + crop.Author.name);
     newPostAuthor.css({
       float: "right",
       color: "blue",
@@ -90,8 +105,8 @@ $(document).ready(function() {
     var newPostCardBody = $("<div>");
     newPostCardBody.addClass("card-body");
     var newPostBody = $("<p>");
-    newPostTitle.text(post.title + " ");
-    newPostBody.text(post.body);
+    newPostTitle.text(crop.cropName + " ");
+    newPostBody.text(crop.cropTotal);
     newPostDate.text(formattedDate);
     newPostTitle.append(newPostDate);
     newPostCardHeading.append(deleteBtn);
@@ -106,11 +121,19 @@ $(document).ready(function() {
   }
 
   // This function figures out which post we want to delete and then calls deletePost
+  function handlePostPost(){
+  cropNa = $("#cropName").val()
+  
+  cropTo = $("#tallyPlants").val()
+   
+    createPost(cropNa, cropTo);
+  }
+
   function handlePostDelete() {
     var currentPost = $(this)
       .parent()
       .parent()
-      .data("post");
+      .data("Crop");
     deletePost(currentPost.id);
   }
 

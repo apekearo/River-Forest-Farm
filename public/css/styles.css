@@ -116,19 +116,38 @@ button.submit {
   animation-name: example;
   animation-duration: 8s;
   animation-iteration-count: infinite;
-  margin: 2%;
+  margin: 1%;
+}
+.ads-internals2 {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain; 
+  position: relative;
+  animation-name: example2;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  margin: 1%;
 }
 
 @keyframes example {
   0%   {left:0px;}
-  50%  {left:380px;}
+  50%  {left:330px;}
   100% {left:0px;}
 }
-@media only screen and (max-width: 600px) {
+@keyframes example2 {
+  0%   {left:0px;}
+  50%  {left:-330px;}
+  100% {left:0px;}
+}
+@media only screen and (max-width: 700px) {
   .ads-internals {
       animation-name: example;
       animation-duration: 0s;
   }
+  .ads-internals2 {
+    animation-name: example2;
+    animation-duration: 0s;
+}
 }
 
 .post {
