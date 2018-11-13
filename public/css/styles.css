@@ -136,6 +136,13 @@ button.edit {
   animation-iteration-count: infinite;
   margin: 1%;
 }
+.notOptimized {
+  visibility: hidden;
+}
+
+#yoNative {
+  margin-top: 1em;
+}
 
 @keyframes example {
   0% {
@@ -175,7 +182,15 @@ button.edit {
     animation-name: example2;
     animation-duration: 0s;
   }
+  .notOptimized {
+    visibility: visible;
+  }
+  #yoNative {
+    margin-top: 3px;
+  }
 }
+
+
 
 .post {
   margin: 30px;

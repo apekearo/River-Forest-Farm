@@ -55,12 +55,18 @@
 									</ul>
 							</div>
 					</div>
-			</nav><img class="img-responsive" src="assets/img/downloadMid.png" style="background-color:rgba(255,255,255,0);"></div>
+			</nav><img class="img-responsive" src="assets/img/downloadMid.png" style="background-color:#ffffff57;border-radius:25px;"></div>
 	
 
    <h2 align="center" class='headlineTitle'>Welcome to the River Forest Farm Blog</h2>
         <!-- <iframe src="http://riverforestfarm.blogspot.com" onload="this.style.height=(this.contentDocument.body.scrollHeight+15) +'px';" style="width:100%;"></iframe> -->
-        <div class="content"></div>
+        <div class="container">
+          <div class="row">
+               <div class="content col-xs-6"></div>
+                <div class="content2 "><iframe src="http://riverforestfarm.blogspot.com/" height="400" width="100%"></iframe>
+                </div>
+          </div>
+        </div>
         <div
         class="map-clean" style="margin-top:170px;height:546px;">
         <div class="container">
@@ -115,7 +121,8 @@
 </body>
 <script type='text/javascript' src='js/bloggerapi.js'></script>
 <script>
-        function renderResults(response) {
+        function renderResults(response, response2) {
+          console.log(response)
           if (response.items) {
             for (var i = 0; i < response.items.length; i++) {
               console.log(response.items)
@@ -124,13 +131,21 @@
         $('#post' + [i+1]  + ' p').html(response.items[i].content);
         // $('#post' + [i+1]  + ' h5').html(response.items[i].replies.selfLink);
 
-            }      
+            }     
+            for (var i = 0; i < response2.items.length; i++) {
+              console.log(response2.items)
+              $('.content').before('<div id="post' + [i+1] + '" class="post"><h1></h1><p></p><h5></h5></div>');
+        $('#post' + [i+1] + ' h1').html(response.items[i].title);
+        $('#post' + [i+1]  + ' p').html(response.items[i].content);
           }
           if(response.nextPageToken) {
             var blogId = '8218378010479152175';
+            var blogId2 = '6392581276725974660';
             var request = gapi.client.blogger.posts.list({
               'blogId': blogId,
+              'blogId2': blogId2,
               'pageToken': response.nextPageToken,
+              'pageToken2': response2.nextPageToken,
               'maxResults': 100
             });
             // TRYING TO GET THE COMMENTS TO SHOW FROM BLOGGER BUT HAVING TROUBLE
@@ -142,13 +157,16 @@
             request.execute(renderResults);
           }
         }
+      }
         function init() {
           gapi.client.setApiKey(hahah);
           gapi.client.load('blogger', 'v3', function() {
               var blogId = '8218378010479152175';
+              var blogId2 = '6392581276725974660';
               var request = gapi.client.blogger.posts.list({
                 'blogId': blogId,
-                'maxResults': 100,
+                'blogId2': blogId2,
+                'maxResults': 100
               });
               request.execute(renderResults);        
           });
