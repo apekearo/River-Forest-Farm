@@ -22,7 +22,30 @@
     <link rel="stylesheet" href="assets/css/Team-Boxed.css">
     <link rel="stylesheet" href="assets/css/Testimonials.css">
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
-
+    <!-- style for the persistent 'top' button -->
+    <style>
+            
+            
+            #myBtn {
+              display: none;
+              position: fixed;
+              bottom: 60px;
+              right: 30px;
+              z-index: 99;
+              font-size: 18px;
+              border: none;
+              outline: none;
+              background-color: red;
+              color: white;
+              cursor: pointer;
+              padding: 15px;
+              border-radius: 4px;
+            }
+            
+            #myBtn:hover {
+              background-color: #555;
+            }
+            </style>
     
 </head>
 
@@ -39,7 +62,7 @@
 									<ul class="nav navbar-nav navbar-right">
 											<li role="presentation"><a href="headlines.html" style="background-color:rgba(255,255,255,0.41);">OUR BLOG</a></li>
 											<li role="presentation"><a href="blog.html" style="background-color:rgba(255,255,255,0.4);">FARM POSTS</a></li>
-											<li role="presentation"><a href="dataChart.html" style="background-color:rgba(255,255,255,0.35);">USDA DATA</a></li>
+											<li role="presentation"><a href="dataChart.html" style="background-color: #666; color: white;">USDA DATA</a></li>
 											<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="background-color:rgba(255,255,255,0.33);">ABOUT US<span class="caret"></span></a>
 													<ul class="dropdown-menu" role="menu">
 															<li role="presentation"><a href="videoPage.html">VIDEO SNIPS</a></li>
@@ -54,6 +77,9 @@
 			</nav>
            
         <img class="img-responsive" src="assets/img/downloadMid.png" style="background-color:#ffffff57;border-radius:25px;">
+<!-- making a button to stay persistent to push back up th the top of the page -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
         <ul class="nav nav-tabs" style="background-color:#ffcc1e;color:#753802;">
             <li class="active"><a href="#viz1524503975420" style="color:#753802;">Fruit and Vegetable Demand</a></li>
             <li><a href="#viz1524504708266" style="color:#753802;">Farming Data By State</a></li>
@@ -61,6 +87,9 @@
         </ul>
         <p class="text-nowrap text-center" style="font-size:35px;color:#753802;background-color:#ffcc1e;">A Collection of Data Charts from the USDA</p>
         <p class="text-nowrap text-center notOptimized" style="font-size:25px;color:#753802;background-color:#ffcc1e;">Not optimized for the cell phone. Sorry.</p>
+
+
+
 
     <div class="container">
         <div class="row">
@@ -109,8 +138,10 @@
                 <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
                 </div>
                     <!-- trying to make a button that stays on top of the page and allows them to jump back up the the top of the page at any moment -->
-                    <!-- <div align='right' style="position: fixed; z-index: +1;"><a href = '.navbar-header'><i class="fa fa-arrow-up" aria-hidden="true"></i></a></div> -->
+                    <!-- <a href = '.navbar-header'><div align='right' style="position: fixed; z-index: +1;"><i class="fa fa-arrow-up fa-5x" aria-hidden="true"></i></div></a> -->
 
+
+                    
                 <div class="footer-dark" style="margin-top:167px;">
                     <footer>
                       <div class="container">
@@ -130,8 +161,8 @@
                 <img class="ads-internals"  align= left src="assets/img/lostpinesSmall.png">
                 <img class="ads-internals2"  align= right src="assets/img/lostpinesSmall.png">
 
-                <p style="font-size: larger;color:black; margin-top: 1em">Yaupon Tea is the only caffeine native to the U.S.</p>
-
+                <p class = "yoNative" style="font-size: larger; line-height: 80%; color:black;">Yaupon Tea is the only caffeine native to the U.S.</p>
+                <p class = "yoAustin" style="color: black">Austin Produced, Austin Sold</p>
             </a>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -139,6 +170,24 @@
     <script src="assets/js/Fixed-navbar-starting-with-transparency.js"></script>
     <script src="assets/js/tree.js"></script>
     <script src="assets/js/wild.js"></script>
+    <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+            </script>
 </body>
 
 </html>

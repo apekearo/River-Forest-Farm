@@ -140,22 +140,27 @@ button.edit {
   visibility: hidden;
 }
 
-#yoNative {
+.yoNative {
   margin-top: 1em;
 }
 
 @keyframes example {
   0% {
     left: 0px;
+
   }
 
   50% {
     left: 330px;
+
   }
 
   100% {
     left: 0px;
+
   }
+  
+  
 }
 
 @keyframes example2 {
@@ -185,7 +190,7 @@ button.edit {
   .notOptimized {
     visibility: visible;
   }
-  #yoNative {
+  .yoNative {
     margin-top: 3px;
   }
 }
@@ -208,6 +213,14 @@ button.edit {
   outline-offset: 15px
 }
 
+#BackgroundVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index:-3;
+}
 /* .container-fluid{
     height:100%;
     display:table;
