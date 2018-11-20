@@ -200,8 +200,8 @@ button.edit {
 
 .post {
   margin: 30px;
-  background: #78B293;
-  border: 1px solid black;
+  background-image: url("../assets/img/postVector.jpg");
+  border: 0.5px solid black;
   outline: 5px solid#1B703F;
   outline-offset: 15px;
 }

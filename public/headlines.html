@@ -126,17 +126,17 @@
           if (response.items) {
             for (var i = 0; i < response.items.length; i++) {
               console.log(response.items)
-              $('.content').before('<div id="post' + [i+1] + '" class="post"><h1></h1><p></p><h5></h5></div>');
+              $('.content').before('<div id="post' + [i+1] + '" class="post"><h1></h1><h4></h4><h5></h5></div>');
         $('#post' + [i+1] + ' h1').html(response.items[i].title);
-        $('#post' + [i+1]  + ' p').html(response.items[i].content);
+        $('#post' + [i+1]  + ' h4').html(response.items[i].content);
         // $('#post' + [i+1]  + ' h5').html(response.items[i].replies.selfLink);
 
             }     
             for (var i = 0; i < response2.items.length; i++) {
               console.log(response2.items)
-              $('.content').before('<div id="post' + [i+1] + '" class="post"><h1></h1><p></p><h5></h5></div>');
+              $('.content').before('<div id="post' + [i+1] + '" class="post"><h1></h1><h4></h4><h5></h5></div>');
         $('#post' + [i+1] + ' h1').html(response.items[i].title);
-        $('#post' + [i+1]  + ' p').html(response.items[i].content);
+        $('#post' + [i+1]  + ' h4').html(response.items[i].content);
           }
           if(response.nextPageToken) {
             var blogId = '8218378010479152175';
