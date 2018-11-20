@@ -96,7 +96,7 @@ $(document).ready(function () {
     var newPostDate = $("<small>");
     var newPostAuthor = $("<h5>");
     //changing posts to crops
-    newPostAuthor.text("Written by: " + post.Author.name);
+    newPostAuthor.append("Written by: " + post.Author.name + "<br>" + "Post's ZipCode: " + post.Author.zip);
     newPostAuthor.css({
       float: "right",
       color: "blue",
@@ -105,8 +105,8 @@ $(document).ready(function () {
     var newPostCardBody = $("<div>");
     newPostCardBody.addClass("card-body");
     var newPostBody = $("<p>");
-    newPostTitle.text(post.cropName + " ");
-    newPostBody.text(post.cropTotal);
+    newPostTitle.text("Crop Name: " + post.cropName + " ");
+    newPostBody.text("Number of Crops: " + post.cropTotal);
     newPostDate.text(formattedDate);
     newPostTitle.append(newPostDate);
     newPostCardHeading.append(deleteBtn);
