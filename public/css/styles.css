@@ -193,6 +193,9 @@ button.edit {
   .yoNative {
     margin-top: 3px;
   }
+  .blogButtons {
+    font-size: 13px;
+  }
   /* #BackgroundVideo {} */
 }
 
