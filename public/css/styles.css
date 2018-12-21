@@ -11,6 +11,15 @@ form#cms {
   padding: 2%;
 }
 
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translateX(calc((100% - 100vw) / 2));
+}
+
 #cms textarea {
   resize: none;
 }
@@ -39,6 +48,10 @@ button.edit {
   background-color: #eef4f7;
   border-radius: 25px;
   border: 2px solid royalblue;
+}
+
+.blogTitle {
+  text-decoration: underline;
 }
 
 .blog {
