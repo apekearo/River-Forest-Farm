@@ -120,12 +120,18 @@ button.edit {
 
 .ads {
   position: fixed;
-  left: 0;
+  /* left: 0; */
   bottom: 0;
-  width: 100%;
-  height: 60px;
-  background-color: #0E860E;
-  text-align: center;
+  background: linear-gradient(to right, #0E860E 0%, #776343 55%);
+  /* text-align: right; */
+}
+.ads2 {
+      /* position: fixed; */
+    /* left: 0; */
+    bottom: 0;
+    background-color: #776343;
+    /* text-align: left; */
+  
 }
 
 .ads-internals {
@@ -150,26 +156,31 @@ button.edit {
   margin: 1%;
 }
 .notOptimized {
-  visibility: hidden;
+  display:none;
 }
 
 .yoNative {
   margin-top: 1em;
 }
-
+.smallYo {
+  display:none;
+}
+.smallYo2 {
+  display:none;
+}
 @keyframes example {
   0% {
-    left: 0px;
+    left: 350px;
 
   }
 
   50% {
-    left: 330px;
+    left: 570px;
 
   }
 
   100% {
-    left: 0px;
+    left: 350px;
 
   }
   
@@ -178,36 +189,51 @@ button.edit {
 
 @keyframes example2 {
   0% {
-    left: 0px;
+    left: -350px;
   }
 
   50% {
-    left: -330px;
+    left: -570px;
   }
 
   100% {
-    left: 0px;
+    left: -350px;
   }
 }
 
 @media only screen and (max-width: 700px) {
   .ads-internals {
-    animation-name: example;
+    /* animation-name: example;
     animation-duration: 0s;
+    margin-left: 10px; */
+    display:none;
   }
 
   .ads-internals2 {
-    animation-name: example2;
+    /* animation-name: example2;
     animation-duration: 0s;
-  }
+    margin-right:10px; */
+    display:none;  }
   .notOptimized {
     visibility: visible;
   }
-  .yoNative {
+  /* .yoNative {
     margin-top: 3px;
-  }
+  } */
   .blogButtons {
     font-size: 13px;
+  }
+  .yoNative{
+    display:none;  }
+  .yoAustin{
+    display:none;  }
+  .smallYo{
+    display: inherit;
+    float: left;
+  }
+  .smallYo2{
+    display: inherit;
+    float: right;
   }
   /* #BackgroundVideo {} */
 }
